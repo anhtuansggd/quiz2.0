@@ -1,0 +1,30 @@
+---
+- # ====== Build Option: Commented Out =========================
+  id: 10260414059133062
+  identification: 
+    name: Commented Out
+
+  status: 
+    status: Exclude
+    default-on-export: Same as Current Status
+    on-upgrade-keep-status: false
+
+  subscription: 
+    version-number: 39492412224167
+
+- # ====== Build Option: Feature: Theme Style Selection ========
+  id: 10553907287133276
+  identification: 
+    name: 'Feature: Theme Style Selection'
+
+  status: 
+    status: Include
+    default-on-export: Same as Current Status
+    on-upgrade-keep-status: false
+
+  comments: 
+    comments: 'Allow administrators to select a default color scheme (theme style) for the application. Administrators can also choose to allow end users to choose their own theme style. '
+
+  subscription: 
+    version-number: 39492412225326
+

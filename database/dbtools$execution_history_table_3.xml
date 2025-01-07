@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+ xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+ <changeSet id="4e51dac803431ddce392fc1081c1deb955252f9a" author="(ADMIN)-Generated" failOnError="true"    runOnChange="false"  runAlways="false"  runInTransaction="false"  >
+  <n0:createSxmlObject objectName="DBTOOLS$EXECUTION_HISTORY" objectType="TABLE" ownerName="ADMIN"  replaceIfExists="false" >
+    <n0:source><![CDATA[
+  <TABLE xmlns="http://xmlns.oracle.com/ku" version="1.0">
+   <SCHEMA>%USER_NAME%</SCHEMA>
+   <NAME>DBTOOLS$EXECUTION_HISTORY</NAME>
+   <RELATIONAL_TABLE>
+      <COL_LIST>
+         <COL_LIST_ITEM>
+            <NAME>ID</NAME>
+            <DATATYPE>NUMBER</DATATYPE>
+            <NOT_NULL></NOT_NULL>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>HASH</NAME>
+            <DATATYPE>CLOB</DATATYPE>
+            <COLLATE_NAME>USING_NLS_COMP</COLLATE_NAME>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>CREATED_BY</NAME>
+            <DATATYPE>VARCHAR2</DATATYPE>
+            <LENGTH>255</LENGTH>
+            <COLLATE_NAME>USING_NLS_COMP</COLLATE_NAME>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>CREATED_ON</NAME>
+            <DATATYPE>TIMESTAMP_WITH_TIMEZONE</DATATYPE>
+            <SCALE>6</SCALE>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>UPDATED_BY</NAME>
+            <DATATYPE>VARCHAR2</DATATYPE>
+            <LENGTH>255</LENGTH>
+            <COLLATE_NAME>USING_NLS_COMP</COLLATE_NAME>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>UPDATED_ON</NAME>
+            <DATATYPE>TIMESTAMP_WITH_TIMEZONE</DATATYPE>
+            <SCALE>6</SCALE>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>STATEMENT</NAME>
+            <DATATYPE>CLOB</DATATYPE>
+            <COLLATE_NAME>USING_NLS_COMP</COLLATE_NAME>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>TIMES</NAME>
+            <DATATYPE>NUMBER</DATATYPE>
+         </COL_LIST_ITEM>
+      </COL_LIST>
+      <PRIMARY_KEY_CONSTRAINT_LIST>
+         <PRIMARY_KEY_CONSTRAINT_LIST_ITEM>
+            <NAME>DBTOOLS$EXECUTION_HISTORY_PK</NAME>
+            <COL_LIST>
+               <COL_LIST_ITEM>
+                  <NAME>ID</NAME>
+               </COL_LIST_ITEM>
+            </COL_LIST>
+            <USING_INDEX></USING_INDEX>
+         </PRIMARY_KEY_CONSTRAINT_LIST_ITEM>
+      </PRIMARY_KEY_CONSTRAINT_LIST>
+      <DEFAULT_COLLATION>USING_NLS_COMP</DEFAULT_COLLATION>
+      <PHYSICAL_PROPERTIES>
+         <HEAP_TABLE></HEAP_TABLE>
+      </PHYSICAL_PROPERTIES>
+   </RELATIONAL_TABLE>
+</TABLE>]]></n0:source>
+      </n0:createSxmlObject>
+ </changeSet>
+</databaseChangeLog>
